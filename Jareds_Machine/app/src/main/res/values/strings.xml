@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Jareds_Machine</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Conway\'s Game of Life</string>
+    <string name="run">Run</string>
+    <string name="clear">Clear</string>
+    <string name="run_for">Run for:</string>
+    <string name="generations">Generations</string>
+    <string name="generation_count">Generation 123</string>
+
+    <string-array name="spn_template">
+        <item>Choose a template</item>
+        <item>Glider Gun</item>
+    </string-array>
+</resources>

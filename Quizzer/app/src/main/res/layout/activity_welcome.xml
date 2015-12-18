@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Welcome"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_title"
+        android:id="@+id/welcomeTitle"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffffff"
+        android:padding="3pt"
+        android:textSize="12pt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffff910b"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_message"
+        android:id="@+id/welcomeMessage"
+        android:layout_below="@+id/welcomeTitle"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff000000"
+        android:textSize="8pt"
+        android:paddingTop="8pt"
+        android:password="false"
+        android:phoneNumber="false"
+        android:paddingLeft="6pt"
+        android:paddingRight="6pt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_name"
+        android:id="@+id/nameText"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textSize="10pt"
+        android:width="200dp"
+        android:textColor="#ffffffff"
+        android:background="#ff2c2c2c"
+        android:enabled="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_label"
+        android:id="@+id/nameLabel"
+        android:layout_below="@+id/nameText"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="73dp"
+        android:text="@string/start_button"
+        android:padding="6pt"
+        android:shadowColor="#ff050505"
+        android:textSize="10pt" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/quizSpinner"
+        android:spinnerMode="dropdown"
+        android:background="#ffd6e8f0"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/welcomeMessage"
+        android:layout_alignEnd="@+id/welcomeMessage"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/topic_label"
+        android:id="@+id/topicLabel"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/quizSpinner"
+        android:layout_toStartOf="@+id/quizSpinner"
+        android:textSize="8pt"
+        android:textColor="#ff000000"
+        android:paddingRight="15dp" />
+
+</RelativeLayout>

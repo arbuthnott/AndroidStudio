@@ -1,0 +1,111 @@
+
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_below="@+id/tvTitle"
+android:layout_centerHorizontal="true"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/title"
+    android:id="@+id/tvTitle"
+    android:layout_gravity="center_horizontal"
+    android:textSize="30dp"
+    android:textColor="#000000" />
+
+<com.nscc.gameoflife.jareds_machine.Board
+    android:id="@+id/signature_canvas"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:textColor="#FFFFFF" />
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvGenCount"
+    android:layout_gravity="center_horizontal"
+    android:textColor="#000000"
+    android:textSize="18dp" />
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="right">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerSetup"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/etGenerations"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/generations"
+                android:id="@+id/textView2"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|right"
+        android:gravity="right">
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="@string/run"
+            android:id="@+id/btnRun"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="@string/clear"
+            android:id="@+id/btnClear"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</LinearLayout>
+
+
+

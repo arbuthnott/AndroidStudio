@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.w0276812.movietrailers.RateActivity"
+    android:background="#ff000000">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/list_item_title"
+        android:id="@+id/rateTitle"
+        android:background="#ff000000"
+        android:textColor="#ffffffff"
+        android:textSize="11pt"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/rateImage"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:minHeight="30dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/rateImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/camera_icon"
+        android:longClickable="false" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:id="@+id/rateThumbnail"
+        android:layout_below="@+id/rateTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:keepScreenOn="false"
+        android:maxHeight="120dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_desc"
+        android:id="@+id/rateDesc"
+        android:textColor="#ffdcdcdc"
+        android:padding="15dp"
+        android:layout_below="@+id/rateThumbnail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="italic"
+        android:textIsSelectable="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/activeBar"
+        android:rating="3.5"
+        android:stepSize="0.5"
+        android:indeterminateOnly="false"
+        android:background="#000000"
+        android:clickable="true"
+        android:foreground="#24ff33"
+        android:isIndicator="false"
+        android:layout_below="@+id/rateDesc"
+        android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_rating"
+            android:id="@+id/saveRating"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="left|bottom"
+            style="@style/Base.TextAppearance.AppCompat.Widget.Button.Inverse"
+            android:layout_toLeftOf="@+id/textView"
+            android:layout_alignTop="@+id/removeItem"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_item"
+            android:id="@+id/removeItem"
+            style="@style/Base.TextAppearance.AppCompat.Widget.Button.Inverse"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY TRAILER"
+        android:id="@+id/playButton"
+        android:layout_above="@+id/saveRating"
+        android:layout_alignRight="@+id/removeItem"
+        android:layout_alignEnd="@+id/removeItem"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Inverse"
+        android:textSize="11pt"
+        android:textStyle="bold" />
+
+</RelativeLayout>

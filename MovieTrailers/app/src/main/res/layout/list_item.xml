@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="#ff000000"
+    android:maxHeight="220dp">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/list_item_title"
+        android:id="@+id/listItemTitle"
+        android:background="#ff000000"
+        android:textColor="#ffffffff"
+        android:textSize="9pt"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/listItemImage"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:minHeight="30dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/listItemImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/camera_icon" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:id="@+id/listItemThumbnail"
+        android:layout_below="@+id/listItemTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:keepScreenOn="false"
+        android:maxHeight="120dp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/listItemThumbnail"
+        android:layout_centerHorizontal="true"
+        android:rating="3.5"
+        android:stepSize="0.5"
+        android:indeterminateOnly="false"
+        android:background="#000000"
+        android:clickable="true"
+        android:foreground="#24ff33"
+        android:isIndicator="true" />
+</RelativeLayout>

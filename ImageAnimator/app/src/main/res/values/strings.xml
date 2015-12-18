@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ImageAnimator</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title">Click to Animate an Image:</string>
+    <string name="reset_button">Reset List</string>
+    <string-array name="image_names">
+        <item>Space-Lobster</item>
+        <item>Space-Octo</item>
+        <item>Space-Skull</item>
+        <item>Space-Saucer</item>
+    </string-array>
+</resources>

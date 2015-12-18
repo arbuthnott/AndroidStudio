@@ -1,0 +1,34 @@
+topic:Project Management
+Waterfall Model:This SDLC Model is older, but can be the best choice when quality is more important than schedule or budget.
+Agile Models:ASD (Adaptive Software Dev), FDD (Featrue Driven Dev), Crystal Clear, DSDM (Dynamic Software Dev Method), RAD (Rapid App Dev), Scrum, XP (eXtreme Programming), RUP (Rational Unify Process)
+Project Charter:A document declaring project scope (wills and won'ts), clarifying requirements, feasibility, outline team roles.
+Scrum Roles:Product Owner, Development team, Scrum Master
+Project Backlog:A list of deliverables for a project, prioritized and managed by someone representing the Product Owner.
+Estimation Metrics:LOC, Size/Complexity, Effort, Objects, Function Points, Use Case Points
+Estimation Techniques:Delphi method, COCOMO, Function-Point, Use-Case-Point, PROBE.
+Delphi Method:An estimation technique where a panel of experts are asked to iteratively judge and justify their judgements.
+COCOMO Method: Constructive Cost Model of Estimation using regression from historical data
+Function-Point Method:An estimation method where code function-points are counted and rated by difficulty.
+Use-Case-Point Method:An estimation technique based on use cases (and their complexity) for the end product.
+PROBE Method:Proxy Based Estimation technique in which tasks are broken down into both size and type categories, and compared to similarly categorized historical data.
+DMAIC and DMADV:Techniques to improve, or design new (respectively) development processes.
+CMMi:Capabilities Maturity Model integrated. Related to high level process management.
+ITIL:Information Technology Infrastructure Library - contains guidelines for IT management, and has had 3 versions since 1980.
+Risk Ranking:Created by combining a risk's likelihood, and it's impact should it occur. Rated 1 (very bad) to 5 (not so bad).
+Risk Management:1.Allociate Budget to risks 2.Include risk identification and management in project plans 3.Implement plans when risks occur
+WBS:Work Breakdown Structure. The end result of iteratively breaking tasks down into subtasks down to the lowest level. At longest, lowest level tasks should be around 1 week.
+WBS Levels:0 - Project, 1 - Deliverables, subphases, 2 - Components, Process Elements, N - etc.
+QA focus:Overall project methodology and compliance to those methodologies
+QC focus:Specific testing and review of specific project deliverables.
+Testing types:Unit test, Functional, Regression, Integration, System, Acceptance
+Unit test:Automated tests to ensure code-blocks return expected results.
+Regression testing:Ensure code and/or products continue to perform well over time. Evaluates continual performance.
+Acceptance test:Formal customer or user testing
+Configuration Management:Version archiving and control, including branching and merging of code versions.
+"Current":Current release, current beta test, currently in dev, currently in design
+CCB:Change Control Board - evaluates and decides on changes to project requirements.
+Pareto Analysis:A technique where defects are graphed, and the least frequent are "cut off" so that 80% of defects are captured to be focused upon.
+Ishikawa Diagram:A fishbone like diagram made for digging down and identifying root causes of problems.
+The 4 M's:Methods, Machines, Materials, Manpower (for Ishikawa diagrams)
+The 4 P's:Place, Procedure, People, Policies (for Ishikawa diagrams)
+The 4 S's:Surroundings, Suppliers, Systems, Skills (for Ishikawa diagrams)
